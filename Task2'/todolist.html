@@ -1,1 +1,104 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TODO List</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+  body {
+  background-image: url('bg.jpeg');
+  background-size: cover;
+  font-family: 'Open Sans', sans-serif;
+  padding: 20px;
+  text-align: center;
+}
 
+h1 {
+  font-weight: 600;
+  color: white;
+  text-shadow: 1px 1px black;
+}
+
+form {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px gray;
+  display: inline-block;
+}
+
+input[type="text"] {
+  font-size: 16px;
+  padding: 10px;
+  width: 60%;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 1px 1px 5px gray;
+}
+
+button[type="submit"] {
+  background-color: green;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px gray;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  text-align: left;
+}
+
+li {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 1px 1px 10px gray;
+  display: flex;
+  justify-content: space-between;
+}
+
+li:hover {
+  background-color: #e0e0e0;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: #b0b0b0;
+}
+
+
+.remove-btn {
+  background-color: red;
+  color: white;
+  font-size: 16px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 5px gray;
+}
+.remove-btn:hover {
+  background-color: #d32f2f;
+}
+
+
+    </style>
+
+</head>
+  <body>
+    <h1>TODO List</h1>
+    <form>
+      <input type="text" id="new-todo" placeholder="Add a new task">
+      <button type="submit" id="add-btn">Add</button>
+    </form>
+    <ul id="todo-list"></ul>
+    <script src="script.js"></script>
+  </body>
+</html>
